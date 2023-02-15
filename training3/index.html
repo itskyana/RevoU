@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox | WPU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <h4>Lorem, ipsum.</h4>
+        </div>
+
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#form">Formulir</a></li>
+            <li><a href="#table">Table</a></li>
+        </ul>
+    </nav>
+
+    <header id="header">
+        <p>Lorem, ipsum dolor.</p>
+    </header>
+
+    <main id="about">
+        <div class="photo">
+            <img src="type-photo.jpg">
+        </div>
+        <div class="side">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem in illo consequuntur nulla facere repudiandae, quam explicabo voluptate tempore, tempora exercitationem ipsa, ipsam quisquam nobis. Saepe ipsa eum labore esse?</p>
+
+            <br>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam officia doloremque rerum quaerat dolorum quasi enim facilis similique eligendi! </p>
+        </div>
+    </main>
+
+    <div class="form" id="form">
+        <form action="other.html" method="post">
+            <fieldset>
+                <legend>Form</legend>
+                <label for="nama">Nama</label>
+                <br>
+                <input type="text" name="nama" required>
+                <br>
+                <label for="usia">Usia</label>
+                <br>
+                <input type="number" max="100" min="10" name="usia" required>
+                <br>
+                <label for="country">Country</label>
+                <br>
+                <select name="country" id="country" required>
+                    <option disabled selected>Choose Country</option>
+                    <optgroup label="Luar">
+                        <option value="Japan">Japan</option>
+                    </optgroup>
+                    <optgroup label="Dalam">
+                        <option value="Indonesian">Indonesian</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <button type="submit">Go</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="table" id="table">
+        <h1>Table</h1>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Judul</th>
+                    <th>Penerbit</th>
+                    <th>Penulis</th>
+                    <th>Jenis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sword Art Online</td>
+                    <td>m&c!</td>
+                    <td>Reki Kawahara</td>
+                    <td>Light Novel</td>
+                </tr>
+                <tr>
+                    <td>Sword Art Online: GGO</td>
+                    <td>m&c!</td>
+                    <td>Reki Kawahara</td>
+                    <td>Light Novel</td>
+                </tr>
+                <tr class="active-row">
+                    <td>Sword Art Online: Alicization</td>
+                    <td>m&c!</td>
+                    <td>Reki Kawahara</td>
+                    <td>Light Novel</td>
+                </tr>
+                <tr>
+                    <td>Sword Art Online: Progressive</td>
+                    <td>m&c!</td>
+                    <td>Reki Kawahara</td>
+                    <td>Manga</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

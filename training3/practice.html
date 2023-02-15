@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Bagian 2 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    padding-bottom: 500px;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    background-color: yellowgreen;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    height: 60px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+nav .logo {
+    letter-spacing: 0.5px;
+    width: 20%;
+    font-size: 1.2em;
+}
+
+nav .logo:hover {
+    color: rgb(201, 213, 188);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+nav ul li a:hover {
+    color: rgb(183, 205, 163);
+}
+
+header {
+    margin-top: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.form {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+}
+
+.table {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Lorem, ipsum.</h4>
+        </div>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">My Profile</a></li>
+            <li><a href="">Portofolio</a></li>
+            <li><a href="">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Form Belajar</h1>
+        <p>Ini adalah website latihan pertama</p>
+    </header>
+    <main>
+        <div class="form">
+            <h2>Ini Form</h2>
+        </div>
+        <div class="table">
+            <h2>Ini Table</h2>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Muhammad Rizky Perdana</p>
+    </footer>
+</body>
+</html>
