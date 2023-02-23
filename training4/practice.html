@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Bagian 2 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    /* padding-bottom: 500px; */
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    background-color: yellowgreen;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    height: 60px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+nav .logo {
+    letter-spacing: 0.5px;
+    width: 20%;
+    font-size: 1.2em;
+}
+
+nav .logo:hover {
+    color: rgb(201, 213, 188);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+nav ul li a:hover {
+    color: rgb(183, 205, 163);
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    margin-top: 5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+}
+
+.form-group {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form-group .label {
+    margin: 5px 10px 5px 0;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.form-group .input {
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 60%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border:solid 1px #ccc;
+}
+
+.form-group .textarea {
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 60%;
+    height: 5rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border:solid 1px #ccc;
+}
+
+input {
+    padding: .3rem;
+}
+
+.button button {
+    margin-top: 1rem;
+    width: 90%;
+    height: 2rem;
+    border-radius: 3px;
+    border:solid 1px #ccc;
+}
+
+.radio {
+    padding-right: 20px;
+}
+
+.form-group span {
+  width: 10px;
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 100%;
+}
+
+.styled-table thead tr {
+    background-color: #f3f3f3;
+    color: black;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid gray;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: gray;
+}
+
+
+
+footer {
+    padding: 20px;
+    margin-right: 20px;
+    text-align: right;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Lorem, ipsum.</h4>
+        </div>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">My Profile</a></li>
+            <li><a href="">Portofolio</a></li>
+            <li><a href="">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="left">
+            <header>
+                <h3>Form Belajar</h3>
+                <p>Ini adalah website latihan pertama</p>
+                <br>
+            </header>
+            
+            <form action="" class="form">
+                <div class="form-group">
+                    <label class="label" for="nama">Nama</label>
+                    <span>:</span>
+                    <input class="input" type="text" name="nama">
+                </div>
+                <div class="form-group">
+                    <label class="label" for="tanggal_lahir">Tanggal Lahir</label>
+                    <span>:</span>
+                    <input class="input" type="date" name="tanggal_lahir">
+                </div>
+                <div class="form-group">
+                    <label class="label" for="jenis_kelamin">Jenis Kelamin</label>
+                    <span>:</span>
+                    <div class="radio">
+                        <input type="radio" name="jenis_kelamin" value="Laki-Laki">
+                        <label for="laki-laki">Laki-Laki</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" name="jenis_kelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                    
+                </div>
+                <div class="form-group">
+                    <label class="label" for="pesan">Pesan</label>
+                    <span>:</span>
+                    <textarea class="textarea" name="pesan" id=""></textarea>
+                </div>
+                <div class="button">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <h3>Ini Table</h3>
+            <table class="styled-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Pesan</th>
+                        <th>Profil</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kyana</td>
+                        <td>09-09-2004</td>
+                        <td>Perempuan</td>
+                        <td>Nothing</td>
+                        <td><a href="">Ini Profil</a></td>
+                        <td>Hapus</td>
+                    </tr>
+                    <tr>
+                        <td>Ryne</td>
+                        <td>10-01-2004</td>
+                        <td>Laki-Laki</td>
+                        <td>Nothing</td>
+                        <td><a href="">Ini Profil</a></td>
+                        <td>Hapus</td>
+                    </tr>
+                    <tr>
+                        <td>Xavier</td>
+                        <td>02-01-2004</td>
+                        <td>Perempuan</td>
+                        <td>Nothing</td>
+                        <td><a href="">Ini Profil</a></td>
+                        <td>Hapus</td>
+                    </tr>
+                    <!-- <tr class="active-row">
+                        <td>Sword Art Online: Alicization</td>
+                        <td>m&c!</td>
+                        <td>Reki Kawahara</td>
+                        <td>Light Novel</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <p>&copy; Muhammad Rizky Perdana</p>
+    </footer>
+</body>
+</html>
